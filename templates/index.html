@@ -1,0 +1,62 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Sep  6 01:27:20 2022
+
+@author: ABHISHEK
+"""
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer CheckedIn Predictor</title>
+</head>
+<body>
+
+    <h1>Customer CheckedIn Predictor</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="post" action="/predict">
+        <label>ID</label><br>
+        <input type="text" name="ID"><br><br>
+
+        <label>Age</label><br>
+        <input type="text" name="Age"><br><br>
+
+        <label>DaysSinceCreation</label><br>
+        <input type="text" name="DaysSinceCreation"><br><br>
+        
+        <label>AverageLeadTime</label><br>
+        <input type="text" name="AverageLeadTime"><br><br>
+
+        <label>LodgingRevenue</label><br>
+        <input type="text" name="LodgingRevenue"><br><br>
+        
+        <label>OtherRevenue</label><br>
+        <input type="text" name="OtherRevenue"><br><br>
+
+        <label>BookingsCanceled</label><br>
+        <input type="text" name="BookingsCanceled"><br><br>
+        
+        <label>BookingsNoShowed</label><br>
+        <input type="text" name="BookingsNoShowed"><br><br>
+
+        <label>PersonsNights</label><br>
+        <input type="text" name="PersonsNights"><br><br> 
+        
+        <label>RoomNights</label><br>
+        <input type="text" name="RoomNights"><br><br>
+
+        <label>DaysSinceLastStay</label><br>
+        <input type="text" name="DaysSinceLastStay"><br><br>
+        
+        <label>DaysSinceFirstStay</label><br>
+        <input type="text" name="DaysSinceFirstStay"><br><br>
+       
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
